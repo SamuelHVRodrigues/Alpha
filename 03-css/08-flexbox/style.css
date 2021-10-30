@@ -1,0 +1,36 @@
+body {
+    background-color: hsl(280, 10%, 90%);
+}
+h1 {
+    display: flex;
+    justify-content: center;
+}
+img {
+    border: 1px solid #000;
+    object-fit: cover;
+}
+.box {
+    display: flex;
+    width: 100%;
+}
+.vertical {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+#davi-venus {
+    width: 80%;
+}
+#tokyo-tokyo {
+    height: 800px;
+}
+.horizontal {
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.horizontal img {
+    width: 200px;
+}
+#adao {
+    object-position: left;
+}

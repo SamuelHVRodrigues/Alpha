@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(00, 99, 66);
+}
+main {
+    width: 582px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+#royal-flush {
+    width: 291px; 
+}
+#royal-flush>* {
+    flex: 97px;
+}
+#straight-flush {
+    flex-direction: column;
+    height: 254px;
+    width: 388px;
+}
+#straight-flush>* {
+    flex: 1 1 127px;
+}
+#quadra {
+    flex-direction: row-reverse;
+    width: 485px;
+}
+#quadra>* {
+    flex: 1 1 97px;
+}
+#full-house>* {
+    flex: 0 0 25%;
+}
+#flush {
+    width: 236px;
+}
+#flush>* {
+    flex: 1 1 97px;
+    margin: 10px;
+}
+#sequencia {
+    flex-wrap: nowrap;
+    width: 582px;
+}
+#sequencia>* {
+    flex: 1 1 97px;
+}
+#trinca {
+    width: 291px;
+}
+#trinca>* {
+    flex: 1 1 auto;
+}
+.hide {
+    visibility: collapse;
+}
+#dois-pares {
+    flex-direction: column-reverse;
+    width: 97px;
+}
+#dois-pares>* {
+    flex: 1 1 127px;
+}
+#par {
+    flex-wrap: wrap-reverse;
+    width: 291px;
+}
+#par>* {
+    flex: 97px;
+}

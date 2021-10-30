@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Directions</title>
+</head>
+<body>
+    <h1>Text Directions</h1>
+    <h2 id="agadois1">vertical right left</h2>
+    <h2 id="agadois2">vertical left right</h2>
+    <h2 id="agadois3">horizontal top bottom</h2>
+    <h2 id="agadois4">sideways right left</h2>
+    <h2 id="agadois5">sideways left right</h2>
+
+    <style>
+        h2 {
+            display: inline-block;
+            background-color: rgb(200, 200, 200);
+        }
+        #agadois1 { writing-mode: vertical-rl; height: 120px; }
+        #agadois2 { writing-mode: vertical-lr; height: 120px; }
+        #agadois3 { writing-mode: horizontal-tb; width: 120px; }
+        #agadois4 { writing-mode: sideways-rl; height: 120px; }
+        #agadois5 { writing-mode: sideways-lr; height: 120px; }
+    </style>
+</body>
+</html>

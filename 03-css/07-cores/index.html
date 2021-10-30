@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cores</title>
+</head>
+<body>
+    <h1>Cores</h1>
+    <article>
+        <section id="hexadecimal"> <h2>Hexadecimal</h2> </section>
+        <section id="hexadecimalTransp"> <h2>Hexadecimal com transparência</h2> </section>
+        <section id="rgb"> <h2>RGB</h2> </section>
+        <section id="rgba"> <h2>RGBA</h2> </section>
+        <section id="hsl"> <h2>HSL</h2> </section>
+        <section id="hsla"> <h2>HSLA</h2> </section>
+        <section id="cor-predefinida"> <h2>Cor predefinida pelo browser</h2> </section>
+        <section id="cor-atual"> <h2>Cor atual do elemento</h2> </section>
+    </article>
+
+    <style>
+        body {
+            background-image: url(homem-na-lua.png);
+            background-size: cover;
+            color: white
+        }
+        section {
+            width: 200px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+        }
+        h2 {
+            color: #000;
+        }
+        #hexadecimal {
+            background-color: #69a8e7;
+        }
+        #hexadecimalTransp {
+            background-color: #69a8e780;
+        }
+        #rgb {
+            background-color: rgb(75, 168, 230);
+        }
+        #rgba {
+            background-color: rgba(75, 168, 230, 0.5);
+        }
+        #hsl {
+            background-color: hsl(240, 100%, 70%);
+        }
+        #hsla {
+            background-color: hsla(240, 100%, 70%, 0.5);
+        }
+        #cor-predefinida {
+            background-color: steelblue;
+        }
+        #cor-atual {
+            background-color: currentColor;
+        }
+    </style>
+</body>
+</html>

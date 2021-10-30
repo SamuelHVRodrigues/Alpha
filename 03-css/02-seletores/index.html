@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Seletores</title>
+</head>
+<body>
+    <h1>Seletores</h1>
+
+    <div>
+        <h2>Lorem ipsum</h2>
+        <p id="resumo">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p class="texto-principal">Sed, voluptates error eius iusto excepturi explicabo!</p>
+        <p class="texto-principal">Iure dolorem sunt quidem vero rerum recusandae.</p>
+        <a href="https://google.com">Clique aqui</a>
+    </div>
+
+    <style>
+        #resumo {
+            font-size: 1.3em;
+        }
+        .texto-principal {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a:hover {
+            font-weight: bold;
+        }
+        h2::first-letter {
+            color: red;
+            font-size: 1.3em;
+        }
+        h2 + p {
+            color: gray;
+        }
+    </style>
+</body>
+</html>

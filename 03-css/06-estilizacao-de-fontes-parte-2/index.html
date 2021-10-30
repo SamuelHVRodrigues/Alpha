@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Estilização de Links</title>
+</head>
+<body>
+    <h1>O que são buscadores?</h1>
+    <p>O buscador é um serviço da Internet que indexa, de forma automática, as páginas que compõem milhares de sites da Internet e nos oferece sua consulta através de pesquisas por palavras-chave.</p>
+    <h2>Buscadores mais conhecidos:</h2>
+    <ul>
+        <li><a href="http://google.com">Google</a></li>
+        <li><a href="http://bing.com">Bing</a></li>
+        <li><a href="http://duckkduckgo.com">DuckDuckGo</a></li>
+    </ul>
+    <style>
+        @font-face {
+            font-family: "ZenTokyoZoo";
+            src: url(ZenTokyoZoo-Regular.woff);
+        }
+        html {
+            font-family: 'Bangers', cursive;
+        }
+        h1, h2 {
+            font-family: "ZenTokyoZoo";
+            color: steelblue;
+        }
+        h1 {
+            font-size: 4em;
+        }
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 2em;
+        }
+        a:link {
+            color: mediumvioletred;
+            font-size: 1.8em;
+        }
+        a:visited {
+            color: mediumslateblue;
+        }
+        a:focus {
+            border: 1px solid black;
+        }
+        a:hover {
+            color: mediumseagreen;
+        }
+        a:active {
+            font-weight: bold;
+        }
+    </style>
+</body>
+</html>

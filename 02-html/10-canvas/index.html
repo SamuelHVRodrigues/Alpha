@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="canvas" width="1020" height="910"></canvas>
+    <script>
+        window.onload = function(){
+            var canvas = document.querySelector("canvas");
+            var ctx = canvas.getContext("2d");
+
+            // Teclas de movimentação
+            var left = 37;
+            var up = 38;
+            var right = 39;
+            var down = 40;
+            // Criação do personagem
+            var spriteSheet = new Image();
+            spriteSheet.src = "sprite-canvas.png";
+            var character = new Sprite(spriteSheet);
+
+            // Fundo
+            var scene = new Image();
+            scene.src = "scene-canvas.jpeg";
+
+            // Eventos do teclado
+            window.addEventListener("keydown", keydownHandler, false);
+            window.addEventListener("keyup", keyupHandler, false);
+            // Evento de pressionar teclas de movimentação
+            function keydownHandler(e){
+                switch(e.keyCode){
+                    case left:
+                        character.moveLeft = true;
+                        character.moveUp = false;
+                        character.moveRight = false;
+                        character.moveDown = false;
+                        break;
+                    case up:
+                        character.moveLeft = false;
+                        character.moveUp = true;
+                        character.moveRight = false;
+                        character.moveDown = false;
+                        break;
+                    case right:
+                        character.moveLeft = false;
+                        character.moveUp = false;
+                        character.moveRight = true;
+                        character.moveDown = false;
+                        break;
+                    case down:
+                        character.moveLeft = false;
+                        character.moveUp = false;
+                        character.moveRight = false;
+                        character.moveDown = true;
+                        break;
+                }
+            }
+            // Evento de soltar teclas de movimentação
+            function keyupHandler(e){
+                switch(e.keyCode){
+                    case left:
+                        character.moveLeft = false;
+                        break;
+                    case up:
+                        character.moveUp = false;
+                        break;
+                    case right:
+                        character.moveRight = false;
+                        break;
+                    case down:
+                        character.moveDown = false;
+                        break;
+                }
+            }
+
+            spriteSheet.onload = function(){
+                init();
+            }
+
+            function init(){
+                loop();
+            }
+            
+            function update(){
+                character.move();
+            }
+            // Desenhar personagem
+            function draw(){
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.drawImage(scene, 0, 0, scene.width, scene.height, 0, 0, canvas.width, canvas.height);
+                character.drawCharacter(ctx);
+            }
+            
+            function loop(){
+                window.requestAnimationFrame(loop, canvas);
+                update();
+                draw();
+            }
+        }
+    </script>
+    
+    <script>
+        function Sprite(img){
+            //Atributos
+            // Imagem do sprite
+            this.img = img;
+            // Posição inicial na imagem do sprite
+            this.srcX = 0;
+            this.srcY = 132;
+            // Tamanho da fração do sprite
+            this.width = 64;
+            this.height = 65;
+            // Posição inicial na tela
+            this.posX = 0;
+            this.posY = 0;
+            // Estado de movimentação inicial
+            this.moveLeft = false;
+            this.moveUp = false;
+            this.moveRight = false;
+            this.moveDown = false;
+            // Velocidade de deslocamento
+            this.speed = 10;
+            // Contador de 
+            this.countFrame = 0;
+
+            //Métodos
+            // Desenhar personagem
+            this.drawCharacter = function(ctx){
+                ctx.drawImage(this.img, this.srcX, this.srcY, this.width, this.height, this.posX, this.posY, this.width, this.height);
+                this.animation();
+            }
+            // Movimentar personagem
+            this.move = function(){
+                if(this.moveLeft){
+                    this.posX -= this.speed;
+                    this.srcY = this.height * 1;
+                } else if(this.moveUp){
+                    this.posY -= this.speed;
+                    this.srcY = this.height * 0;
+                } else if(this.moveRight) {
+                    this.posX += this.speed;
+                    this.srcY = this.height * 3;
+                } else if(this.moveDown){
+                    this.posY += this.speed;
+                    this.srcY = this.height * 2;
+                }
+            }
+            // Animação do personagem
+            this.animation = function(){
+                if(this.moveLeft || this.moveUp || this.moveRight || this.moveDown){
+                    this.countFrame++;
+                    if(this.countFrame >= 45){
+                        this.countFrame = 0;
+                    }
+                    this.srcX = Math.floor(this.countFrame / 5) * this.width;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
