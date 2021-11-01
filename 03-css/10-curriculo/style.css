@@ -7,6 +7,19 @@ body {
     color: #afb5bb;
     font-family: Aldrich;
     font-size: 20px;
+    margin-top: 0;
+}
+header {
+    background-color: #161b22;
+    width: 940px;
+    padding: 0 20px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #afb5bb;
 }
 main {
     display: flex;
@@ -78,7 +91,7 @@ a > img:hover {
 footer {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 15px;
 }
 footer a {
     font-size: 15px;
