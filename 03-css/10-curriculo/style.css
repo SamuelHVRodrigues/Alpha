@@ -40,6 +40,17 @@ main {
     margin: 10px 0 10px;
     border-radius: 25px;
 }
+h1 {
+    font-size: 35px;
+}
+h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+h3 {
+    font-size: 25px;
+    margin: 25px 0 10px 0;
+}
 ul {
     list-style: none;
     padding-left: 0;
@@ -53,16 +64,22 @@ svg {
     margin-right: 20px;
     fill: #afb5bb;
 }
-h1, h2 {
-    font-size: 30px;
-    margin: 20px 0;
-}
-h3 {
-    font-size: 25px;
-    margin: 25px 0 10px 0;
-}
 a {
     
     text-decoration: none;
     color: #afb5bb;
+}
+a:hover {
+    text-decoration: underline;
+}
+a > img:hover {
+    border-bottom: 2px solid #afb5bb;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+footer a {
+    font-size: 15px;
 }
