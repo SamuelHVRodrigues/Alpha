@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Aldrich";
+    src: url(Aldrich-Regular.ttf);
+}
+body {
+    background-color: #30363d;
+    color: #afb5bb;
+    font-family: Aldrich;
+    font-size: 20px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    background-color: #161b22;
+    width: 940px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #afb5bb;
+    border-radius: 10px;
+}
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile ul li {
+    margin-bottom: 25px;
+}
+#profile-image img {
+    width: 400px;
+    margin-right: 50px;
+    border-radius: 50%;
+    box-shadow: 0.5em 0.5em 1em #30363d;
+}
+.projects img {
+    width: 940px;
+    margin: 10px 0 10px;
+    border-radius: 25px;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 40px;
+}
+ul li {
+    display: flex;
+    margin-bottom: 15px;
+}
+svg {
+    margin-right: 20px;
+    fill: #afb5bb;
+}
+h1, h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+h3 {
+    font-size: 25px;
+    margin: 25px 0 10px 0;
+}
+a {
+    
+    text-decoration: none;
+    color: #afb5bb;
+}
