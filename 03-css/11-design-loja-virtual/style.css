@@ -1,0 +1,280 @@
+@font-face {
+    font-family: 'Anton';
+    src: url(Anton-Regular.ttf);
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(Avenir-LT-W01-35-Light.ttf);
+}
+.anton {
+    font-family: 'Anton';
+}
+.avenir {
+    font-family: 'Avenir';
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+#top-bar {
+    background-color: #181818;
+    width: 100%;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 4px;
+    font-size: 16px;
+    color: #a6a2a2;
+}
+header nav {
+    background-color: #fff;
+    width: 1704px;
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    padding: 20px;
+}
+#nav-btns-right {
+    display: flex;
+    align-items: center;
+    width: 179px;
+    justify-content: space-between;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0 0;
+}
+#banner {
+    width: 1704px;
+    height: 660px;
+    background: linear-gradient(rgba(20, 20, 20, 0.15), rgba(20, 20, 20, 0.15)), url(assets/background.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+#banner-title {
+    font-size: 78px;
+    line-height: 85px;
+    letter-spacing: 0.75px;
+    width: 410px;
+    height: 160px;
+    text-align: center;
+}
+#banner-description {
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    height: 84px;
+    display: flex;
+    align-items: center;
+}
+#btn-comprar {
+    width: 110px;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 1px #fff;
+    color: #fff;
+}
+#colection {
+    width: 1704px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 0;
+}
+#colection-title {
+    font-size: 24.5px;
+    letter-spacing: 6.5px;
+    font-weight: 100;
+    color: #181818;
+}
+.products-line {
+    display: flex;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 462px;
+}
+.product img {
+    width: 405px;
+    margin: 50px 0 30px;
+}
+.product-name-value {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
+}
+.product-name {
+    font-size: 15px;
+    margin: 15px 0 0;
+    letter-spacing: .3px;
+    text-shadow: .4px .4px #181818, .4px -.4px #181818, -.4px .4px #181818, -.4px -.4px #181818;
+}
+.product-value {
+    font-size: 13px;
+    margin: 5px 0 0;
+}
+#btn-ver-tudo {
+    color: #181818;
+    width: 110px;
+    height: 40px;
+    border: 1px solid #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin:50px 0 67px;
+}
+#instagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fafafa;
+    width: 100%;
+    padding: 0 0 45px;
+}
+#instagram-name {
+    margin: 55px 0;
+    font-size: 24.5px;
+    letter-spacing: 6.5px;
+    font-weight: 100;
+    color: #181818;
+}
+#instagram-mural {
+    display: flex;
+    width: 1704px;
+    height: 871px;
+}
+#instagram-mural div {
+    display: flex;
+    flex-wrap: wrap;
+}
+#instagram-mural img {
+    width: 284px;
+}
+#instagram-photos-1 {
+    width: 568px;
+}
+#instagram-photos-1>* {
+    flex: 284px;
+}
+#instagram-photos-2 {
+    width: 284px;
+}
+#instagram-photos-3 {
+    width: 568px;
+}
+#instagram-photos-3>* {
+    flex: 284px;
+}
+#instagram-photos-4 {
+    width: 284px;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 359px;
+}
+#footer-links-form {
+    color: #fff;
+    background-color: #181818;
+    height: 276px;
+    display: flex;
+    padding: 0 460px;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer-links {
+    display: flex;
+}
+.links-column {
+    display: flex;
+    flex-direction: column;
+}
+.links-column a {
+    padding: 6px 0;
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+#links-column-1 {
+    width: 159px;
+    margin-left: 2px;
+}
+#footer-form-social-medias {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 142px;
+}
+#footer-form {
+    display: flex;
+    align-items: flex-start;
+}
+#email {
+    width: 298px;
+    height: 39px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+}
+#email::placeholder {
+    color: #fff;
+    padding: 0 0 0 22px;
+    font-family: "Avenir";
+    font-size: 15px;
+}
+#participar {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #181818;
+    font-size: 15px;
+    border: 1px solid #fff;
+    font-family: "Avenir";
+    margin: 0 0 0 8px ;
+}
+#social-medias-svgs {
+    display: flex;
+    justify-content: space-between;
+    width: 148px;
+    margin: 55px 0 0 242px;
+    fill: #fff;
+}
+#footer-more-info {
+    background-color: #2e2d2d;
+    color: #a6a2a2;
+    padding: 19px 461px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+    letter-spacing: -.4px;
+}
