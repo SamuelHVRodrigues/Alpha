@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  background-color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.botoes {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+}
+
+.botoes button {
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  width: 160px;
+  height: 45px;
+  transform: skewX(-30deg);
+  background: linear-gradient(
+    90deg,
+    #d4b86a 3%,
+    #fff4b0 29.21%,
+    #ba8b2c 56.53%,
+    #dcc290 89.68%
+  );
+}
+
+.botoes button p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: skewX(30deg);
+}
+
+.foto-inicial img {
+  width: 100%;
+  position: relative;
+}
+
+.titulo-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.texto-titulo {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: white;
+  font-size: 48px;
+  line-height: 1;
+  width: 1200px;
+  height: 1000px;
+  left: 20%;
+  margin-left: -50px;
+  margin-top: -50px;
+  top: 50%;
+}
+
+.foto-inicial p {
+  font-size: 32px;
+  line-height: normal;
+}
+
+.titulo-principal button {
+  border: none;
+  font-family: inherit;
+  position: absolute;
+  font-size: 30px;
+  width: 452px;
+  height: 98px;
+  left: 30%;
+  margin-left: -50px;
+  margin-top: -50px;
+  top: 50%;
+  transform: skewX(-30deg);
+  background: linear-gradient(
+    90deg,
+    #d4b86a 3%,
+    #fff4b0 29.21%,
+    #ba8b2c 56.53%,
+    #dcc290 89.68%
+  );
+}
+
+.titulo-principal button p {
+  transform: skewX(30deg);
+}
