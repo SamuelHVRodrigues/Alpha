@@ -1,3 +1,4 @@
+/* RODRIGO */
 * {
   margin: 0;
   padding: 0;
@@ -106,4 +107,73 @@ header {
 
 .titulo-principal button p {
   transform: skewX(30deg);
+}
+
+/* SAMUEL */
+@font-face {
+  font-family: "PressStart2P";
+  src: url(PressStart2P-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoMono";
+  src: url(RobotoMono-VariableFont_wght.ttf);
+}
+#next-events {
+  height: 100vh;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#next-events h2 {
+  font-family: "PressStart2P";
+  font-size: 1.6vw;
+  margin: 1.6vw 0;
+}
+.event-card {
+  width: 71vw;
+  height: 12vw;
+  display: flex;
+  margin: .6vw 0;
+}
+.event-card img {
+  height: 12vw;
+  width: 50vw;
+  object-fit: cover;
+}
+.event-info {
+  height: 12vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 21.25vw;
+  background-color: #161b22;
+  color: #fff;
+}
+.event-info h3 {
+  font-size: 1.1vw;
+  font-family: "PressStart2P";
+  margin: 1.1vw 0 .6vw;
+}
+.event-info span {
+  font-family: "RobotoMono";
+  font-size: 0.85vw;
+}
+#next-events button {
+  height: 2.1vw;
+  transform: skewX(-30deg);
+  background: linear-gradient(90deg, #D4B86A 7.41%, #FFF4B0 52.94%, #BA8B2C 100.41%, #DCC290 157.99%);
+  border: 0;
+  font-size: .65vw;
+  font-family: "PressStart2P";
+}
+.see-details {
+  margin: 4.8vw 0 1.1vw;
+  width: 11vw;
+  justify-self: flex-end;
+}
+.see-other-events {
+  width: 18vw;
+  margin: 1.6vw 0 0;
 }
