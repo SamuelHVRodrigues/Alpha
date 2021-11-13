@@ -8,18 +8,15 @@
 body {
   font-family: "Press Start 2P", cursive;
 }
-
 header {
   display: flex;
   justify-content: space-between;
   padding-right: 30px;
   background-color: black;
   position: fixed;
+  width: 100%;
   z-index: 1;
-  width: 100vw;
 }
-
-
 
 .logo {
   display: flex;
@@ -49,40 +46,37 @@ header {
   );
 }
 
-.botoes button p {
+.botoes button div {
   display: flex;
   align-items: center;
   justify-content: center;
   transform: skewX(30deg);
 }
 
-.foto-inicial img {
-  width: 100%;
-  height: 100vh;
+.foto-inicial {
+  min-height: 100vh;
   position: relative;
-}
-
-.titulo-principal {
+  background: url(imagens/foto-museu.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 48px;
+  line-height: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
 }
 
-.texto-titulo {
-  position: absolute;
+.texto-principal {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  color: white;
-  font-size: 48px;
-  line-height: 1;
-  width: 1200px;
-  height: 1000px;
-  left: 20%;
-  margin-left: -50px;
-  margin-top: -50px;
-  top: 50%;
+  margin-top: 80px;
 }
 
 .foto-inicial p {
@@ -90,17 +84,12 @@ header {
   line-height: normal;
 }
 
-.titulo-principal button {
+.foto-inicial button {
   border: none;
   font-family: inherit;
-  position: absolute;
   font-size: 30px;
   width: 452px;
   height: 98px;
-  left: 30%;
-  margin-left: -50px;
-  margin-top: -50px;
-  top: 50%;
   transform: skewX(-30deg);
   background: linear-gradient(
     90deg,
@@ -111,7 +100,7 @@ header {
   );
 }
 
-.titulo-principal button p {
+.foto-inicial button div {
   transform: skewX(30deg);
 }
 
