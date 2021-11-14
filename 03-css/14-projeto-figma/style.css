@@ -114,7 +114,7 @@ header {
   src: url(RobotoMono-VariableFont_wght.ttf);
 }
 #next-events {
-  height: 100vh;
+  height: 89.4vh;
   background-color: #e5e5e5;
   display: flex;
   flex-direction: column;
@@ -127,21 +127,21 @@ header {
 }
 .event-card {
   width: 71vw;
-  height: 12vw;
+  height: 10.6vw;
   display: flex;
   margin: .6vw 0;
 }
 .event-card img {
-  height: 12vw;
+  height: 10.6vw;
   width: 50vw;
   object-fit: cover;
 }
 .event-info {
-  height: 12vw;
+  height: 10.6vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 21.25vw;
   background-color: #161b22;
   color: #fff;
@@ -155,6 +155,11 @@ header {
   font-family: "RobotoMono";
   font-size: 0.85vw;
 }
+.name-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #next-events button {
   height: 2.1vw;
   transform: skewX(-30deg);
@@ -163,10 +168,15 @@ header {
   font-size: .65vw;
   font-family: "PressStart2P";
 }
+#next-events button span {
+  display: block;
+  font-family: "PressStart2P";
+  font-size: .65vw;
+  transform: skewX(30deg);
+}
 .see-details {
-  margin: 4.8vw 0 1.1vw;
   width: 11vw;
-  justify-self: flex-end;
+  margin: 0 0 1.1vw;
 }
 .see-other-events {
   width: 18vw;
