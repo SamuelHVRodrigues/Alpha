@@ -194,8 +194,8 @@ header {
   margin-left: -50px;
 }
 .alehff{
-  width: 100%;
-  height: 665px;
+  width: 100vw;
+  height: 100vh;
   background-color: #161B22;
   display: flex;
   justify-content: center;
@@ -206,19 +206,25 @@ header {
   flex-flow: column;
   text-align: center;
   color: #FFFFFF;
-  margin-top: 150px;
-  margin-left: 150px;
+  margin-top: 22.83vh;
+  margin-left: 10.98vw;
+}
+.infos h2{
+  font-size: 1.5vw;
+}
+.infos p{
+  font-size: 1.3vw;
 }
 
 .buttonn{
   border: none;
   font-family: "Press Start 2P";
   position: absolute;
-  font-size: 20px;
-  width: 300px;
-  height: 70px;
-  margin-top: 250px;
-  margin-left: 40px;
+  font-size: 1.5vw;
+  width: 21.96vw;
+  height: 10.65vh;
+  margin-top: 38.05vh;
+  margin-left: 3vw;
   
   transform: skewX(-30deg);
   background: linear-gradient(
@@ -228,4 +234,41 @@ header {
       #ba8b2c 56.53%,
       #dcc290 89.68%
   );
+}
+.tamanho{
+  width: 29.3vw;
+  height: 76.1vh;
+}
+@media(max-width: 500px) {
+  .tamanho{
+      width: 32vw;
+      height: 50vh;
+      margin-left: 70px;
+      margin-top: 7vh;
+  }  
+  .buttonn{
+      border: none;
+      font-family: "Press Start 2P";
+      position: absolute;
+      font-size: 3vw;
+      width: 30vw;
+      height: 10.65vh;
+      margin-top: 30.0vh;
+      margin-left: 10vw;
+      
+      transform: skewX(-30deg);
+      background: linear-gradient(
+          90deg,
+          #d4b86a 3%,
+          #fff4b0 29.21%,
+          #ba8b2c 56.53%,
+          #dcc290 89.68%
+      );
+  }
+  .infos h2{
+      font-size: 3vw;
+  }
+  .infos p{
+      font-size: 2.7vw;
+  }
 }
