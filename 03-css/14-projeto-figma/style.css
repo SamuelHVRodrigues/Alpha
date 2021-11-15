@@ -272,3 +272,123 @@ header {
       font-size: 2.7vw;
   }
 }
+
+/* BRUNO */
+#contato{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#contato h2{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 4vw;
+    margin: 1.6vw 0;
+}
+#contato span, #contato strong{
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.22vw;
+    line-height: 2.5vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+#contato strong{
+    font-size: 1.8vw;
+    margin-top: 2vh;
+}
+.informacoes {
+    display: flex;
+    align-content: center;
+    align-items: normal;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 80%;
+}
+.informacoes > *{
+    width: 30vh;
+    font-size: 1.3px;
+    padding-left: 1vh;
+}
+
+
+/*formulário*/
+#contato fieldset{
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 80%;
+}
+#contato input, #contato textarea{
+    font-family: 'Roboto Mono';
+    font-size: 1.8vw;
+    height: 3vw;
+    width:48%;
+    margin-bottom: 5vh;
+    background-color: transparent;
+    box-shadow: 0 2px 0 0;
+    border: 0 none;
+    outline: 0;
+    border-bottom:5px black;
+}
+.maior{
+    width: 100%;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.info > *{
+    margin-bottom: 2vh;
+}
+    
+.botao{
+    height: 3vw;
+    width: 20vw;
+    transform: skewX(-30deg);
+    background: linear-gradient(90deg, #D4B86A 7.41%, #FFF4B0 52.94%, #BA8B2C 100.41%, #DCC290 157.99%);
+    border: 0;
+    font-size: 1vw;
+    font-family: "Press Start 2P";
+    box-shadow: 0 0 0 0;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+
+
+/* Informações do Rodapé*/
+footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #161B22;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1vh;
+}
+footer img{
+    padding: 0.8vh;
+}
+.itens-rodape{
+    font-size: 1.17vw;
+}
+.direitos {
+    font-size: 0.78vw;
+    margin-top: 1vh;
+}
