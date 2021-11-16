@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+.foto-museu {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+}
+
+.foto-museu img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+}
+
+.tela-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 35%;
+  height: auto;
+  background-color: #161b22;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tela-login img {
+  max-width: 100%;
+  max-height: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.forms input {
+  width: 80%;
+  height: 50px;
+  border-width: 3px;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    180deg,
+    #d4b86a 0%,
+    #fff4b0 34.9%,
+    #ba8b2c 64.58%,
+    #dcc290 98.96%
+  );
+}
+
+.forms input::placeholder {
+  font-family: "Press Start 2P", cursive;
+  font-size: 18px;
+  color: #4c4d3f;
+  text-align: center;
+}
+
+.tela-login a,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.botao-e-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 30px;
+}
+
+.botao-e-link button {
+  border: none;
+  font-family: inherit;
+  font-size: 30px;
+  width: 100%;
+  max-width: 452px;
+  min-height: 98px;
+  transform: skewX(-30deg);
+  background: linear-gradient(
+    90deg,
+    #d4b86a 3%,
+    #fff4b0 29.21%,
+    #ba8b2c 56.53%,
+    #dcc290 89.68%
+  );
+}
+
+.botao-e-link button div {
+  text-align: center;
+  transform: skewX(30deg);
+}

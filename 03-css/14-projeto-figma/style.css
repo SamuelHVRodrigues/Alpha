@@ -354,7 +354,7 @@ header {
     margin-bottom: 2vh;
 }
     
-.botao{
+#contato .botao{
     height: 3vw;
     width: 20vw;
     transform: skewX(-30deg);
