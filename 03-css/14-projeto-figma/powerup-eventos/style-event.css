@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "PressStart2P";
+    src: url(../PressStart2P-Regular.ttf);
+}
+@font-face {
+    font-family: "RobotoMono";
+    src: url(../RobotoMono-VariableFont_wght.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rodrigo */
+header {
+display: flex;
+justify-content: space-between;
+padding-right: 30px;
+background-color: black;
+width: 100%;
+}
+
+.logo {
+display: flex;
+align-items: center;
+color: white;
+}
+
+.botoes {
+display: flex;
+align-items: center;
+gap: 2%;
+}
+
+.botoes button {
+border: none;
+font-family: "PressStart2P";
+font-size: 14px;
+width: 160px;
+height: 45px;
+transform: skewX(-30deg);
+background: linear-gradient(
+    90deg,
+    #d4b86a 3%,
+    #fff4b0 29.21%,
+    #ba8b2c 56.53%,
+    #dcc290 89.68%
+);
+}
+
+.botoes button div {
+display: flex;
+align-items: center;
+justify-content: center;
+transform: skewX(30deg);
+}
+
+/* Samuel */
+main {
+    display: flex;
+    flex-direction: column;
+}
+#event {
+    background-color: #161b22;
+    width: 1140px;
+    height: 664px;
+    display: flex;
+    margin: 30px 0;
+    align-self: center;
+}
+#event img {
+    width: 580px;
+    height: 664px;
+    object-fit: cover;
+    object-position: left;
+}
+#event-info-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 580px;
+    height: 664px;
+    color: #fff;
+    font-family: "RobotoMono";
+    padding: 20px;
+}
+#event-info h3 {
+    font-family: "PressStart2P";
+    font-size: 30px;
+}
+#event-info span {
+    font-size: 14px;
+    margin: 20px 0 30px;
+    display: block;
+}
+#event-info p {
+    font-size: 18px;
+}
+#event-info-area button {
+    font-family: "PressStart2P";
+    color: #fff;
+    width: 495px;
+    height: 45px;
+    transform: skewX(-30deg);
+    background: linear-gradient(90deg, #5BAF63 7.41%, #6DA473 52.94%, #196C31 100.41%, #79BA87 157.99%);
+    border: 0;
+    align-self: center;
+}
+#event-info-area button span {
+    display: block;
+    transform: skewX(30deg);
+}
+#see-other-events {
+    background-color: #c9ced4;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px;
+}
+#see-other-events img{
+    height: 100px;
+}
+#see-other-events-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "RobotoMono";
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 75px;
+}
+#see-other-events-text-title {
+    font-size: 20px;
+}
+#see-other-events button {
+    background: linear-gradient(90deg, #D4B86A 7.41%, #FFF4B0 52.94%, #BA8B2C 100.41%, #DCC290 157.99%);
+    width: 300px;
+    height: 45px;
+    border: 0;
+    transform: skewX(-30deg);
+    align-self: center;
+}
+#see-other-events button span {
+    display: block;
+    font-family: "PressStart2P";
+    transform: skewX(30deg);
+    font-size: 12px;
+}
+
+/* Bruno */
+footer {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-color: #161B22;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+    padding: 1vh;
+}
+footer img{
+    padding: 0.8vh;
+}
+.itens-rodape{
+    font-size: 1.17vw;
+}
+.direitos {
+    font-size: 0.78vw;
+    margin-top: 1vh;
+}
