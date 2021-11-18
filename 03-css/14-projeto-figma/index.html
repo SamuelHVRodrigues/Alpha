@@ -1,3 +1,21 @@
+<!-- Resumo => 
+        Positivos
+        1º Boa modularização da aplicação.
+        2º Consistência e padrão de design
+        
+        Negativos
+        1º Codificação em dupla linguagem
+        2º Valores de atributos pouco descritivos
+        3º Presença de muitas tags desnecessárias
+        
+        Extra
+        1º É recomendado que as pastas de ícones(icons), fontes(fonts) e imagens(images) sejam subpastas da pasta assets.
+        2º É recomendado criar ao menos duas folhas de estilos para separar estilos gerais de estilos mais específicos.
+          set-style.css => para estilos padrões como as variáveis de estilos, estilos para body, button, input, etc. Tudo que for genérico
+          style.css => para estilos de elementos mais específicos definidos por id ou class
+
+        Vocês encontrarão mais feedback ao longo deste arquivo HTML e ./styles.css
+     -->
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
@@ -17,15 +35,18 @@
   <body>
     <header> <!-- Rodrigo -->
       <div class="logo" onclick="window.location.href = 'index.html'">
+        <!--As propriedades dessa div, poderia estar na propria <img> da logo e essa div não seria necessaria-->
         <img src="imagens/logotipo.svg" alt="logo" />
       </div>
 
-      <div class="botoes">
-        <button onclick="window.location.href = 'powerup-eventos/events.html'"><div>Eventos</div></button>
-        <button><div>Sobre</div></button>
+      <div class="botoes"><!--É recomendado manter um único idioma para codificação(preferencialmente inglês)-->
+        <button onclick="window.location.href = 'powerup-eventos/events.html'"><!--Espera-se um atributo type em todos as tags <button>-->
+          <div>Eventos</div><!--? tag <div> desnecessária-->
+        </button>
+        <button><div>Sobre</div></button><!--? tag <div> desnecessária-->
         <button><div>Contato</div></button>
         <button class="botao-login" onclick="window.location.href = 'powerup-login/index.html'">
-          <div>
+          <div><!--tag <div> desnecessária-->
             Login
             <img src="imagens/icone-do-usuario.svg" alt="Icone do usuario" />
           </div>
@@ -44,7 +65,9 @@
           video games como você nunca viu!!
         </p>
       </div>
-      <button onclick="window.location.href = 'powerup-eventos/events.html'"><div>Participe</div></button>
+      <button onclick="window.location.href = 'powerup-eventos/events.html'">
+        <div>Participe</div><!--tag <div> desnecessária-->
+      </button>
     </section>
     
     <section id="next-events"> <!-- Samuel -->
@@ -56,7 +79,9 @@
                   <h3>PRESS START</h3>
                   <span>SEX 26/11/2021 - 18:00 às 22:00</span>
               </div>
-              <button class="see-details" onclick="window.location.href = 'powerup-eventos/event.html'"><span>Ver Detalhes</span></button>
+              <button class="see-details" onclick="window.location.href = 'powerup-eventos/event.html'">
+                <span>Ver Detalhes</span><!--tag <span> desnecessária-->
+              </button>
           </div> 
       </div>
       <div class="event-card">
@@ -82,19 +107,24 @@
       <button class="see-other-events" onclick="window.location.href = 'powerup-eventos/events.html'"><span>Ver outros eventos</span></button>
     </section> 
   
-    <section class="alehff"> <!-- Alehff -->
-      <div class="margem1">
+    <section class="alehff"> <!-- Alehff --> <!--Valores de atributos devem ser descritivos-->
+      <!--Toda <section> precisa ter uma tag de título(<h1>, <h2>...).-->
+      <div class="margem1"> 
+        <!--As propriedades de estilo dessa div, poderia estar no proprio <iframe> abaixo e essa div não seria necessaria-->
           <iframe class="tamanho" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667.7922859893557!2d-1.4666507628936467!3d53.38368022480075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487978784f52b567%3A0xe67347f9d29e709e!2sCastle%20House%2C%20Sheffield%20City%20Centre%2C%20Sheffield%2C%20Reino%20Unido!5e0!3m2!1spt-BR!2sbr!4v1636778928326!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
       <div class="infos">
           <h2 class="P2P">Venha nos visitar!</h2>
-          <p class="roboto">Castle House, <br>
+          <p class="roboto">Castle House, <br><!-- O modo correto de fechar tags com auto fechamento é />
+                                          <br />-->
               Angel St, Sheffield City Centre, <br>
               Sheffield S3 8LN, <br>
               United Kingdom
           </p>
           
-          <button class="buttonn" onclick="window.location.href = 'powerup-eventos/events.html'"><span>Participe</span></button>
+          <button class="buttonn" onclick="window.location.href = 'powerup-eventos/events.html'">
+            <span>Participe</span>
+          </button>
       </div>
     </section>
 
@@ -129,7 +159,7 @@
 
     <footer> <!-- Bruno -->
       <div class="redessociais">
-          <img src="icones/facebook.svg" />
+          <img src="icones/facebook.svg" /><!--É esperado o atributo alt para toda tag <img>-->
           <img src="icones/instagram.svg" />
           <img src="icones/twitter.svg" />
           <img src="icones/youtube.svg" />

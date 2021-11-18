@@ -105,7 +105,7 @@ header {
 }
 
 /* SAMUEL */
-@font-face {
+@font-face { /* importação de fontes devem ser colocadas no topo do documento*/ 
   font-family: "PressStart2P";
   src: url(PressStart2P-Regular.ttf);
 }
