@@ -1,0 +1,2 @@
+document.getElementById("description").innerHTML = "Ciclismo de estrada é uma modalidade do ciclismo disputada em circuitos abertos como ruas e estradas. Os ciclistas de estrada utilizam bicicletas chamadas de road bike ou, como são chamadas aqui no Brasil, bike speed.";
+document.getElementById("description").style.fontSize = "18px";

@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Aldrich";
+    src: url(Aldrich-Regular.ttf);
+}
+body {
+    background-color: #f4f4f2;
+    color: #495464;
+    margin: 0;
+    font-family: Aldrich;
+    font-size: 20px;
+}
+.container {
+    background-color: #e8e8e8;
+    width: 940px;
+    margin: 0 0 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 2px solid #495464;
+    scroll-margin-top: 76px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+}
+#contact img {
+    width: 200px;
+    margin-right: 50px;
+    border-radius: 50%;
+    box-shadow: 0.1em 0.1em 0.5em #495464;
+}
+#contact ul li {
+    margin: 20px 0 0;
+}
+#strava-cards iframe {
+    width: 450px;
+    height: 348px;
+    margin-bottom: 20px;
+}
+.strava-column-1 {
+    margin-right: 20px;
+}
+h1 {
+    font-size: 35px;
+    margin: 0 0 25px;
+}
+h2 {
+    font-size: 30px;
+    margin: 0 0 20px;
+}
+h3 {
+    font-size: 25px;
+    margin: 25px 0 10px 0;
+}
+h4 {
+    margin: 25px 0;
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+ul li {
+    display: flex;
+}
+svg {
+    fill: #495464;
+    margin-right: 20px;
+}
+a {
+    color: #495464;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+footer a {
+    font-size: 15px;
+}
