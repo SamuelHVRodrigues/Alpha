@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Siri Cascudo</title>
+</head>
+<body>
+    <header>
+        <img src="assets/krusty-krab.png">
+        <nav>
+            <a href="">Home</a>
+            <a href="">Cardápio</a>
+            <a href="">Promoção</a>
+            <a href="">Comentários</a>
+            <a href="">Avalie-nos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <h1>O Siri Cascudo</h1>
+            <img src="assets/the-krusty-krab.png">
+        </section>
+        <section id="menu" class="container">
+            <h2>Cardápio</h2>
+            <div class="menu-itens">
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty</span>
+                    <span>R$ 20,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Duplo</span>
+                    <span>R$ 40,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Triplo</span>
+                    <span>R$ 60,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Quadruplo</span>
+                    <span>R$ 80,00</span>
+                </div>
+            </div>
+        </section>
+        <section id="promotions" class="container">
+            <h2>Promoções</h2>
+            <div class="menu-itens">
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty</span>
+                    <span>R$ 19,99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Quadruplo</span>
+                    <span>R$ 79,99</span>
+                </div>
+            </div>
+        </section>
+        <section id="comments" class="container">
+            <h2>Comentários</h2>
+            <div class="comment-card">
+                <img src="">
+                <h4>Plankton</h4>
+                <h3 class="comment-title">Adorei</h3>
+                <p class="comment-text">Gostei muito, quero saber qual é o ingrediente secreto</p>
+                <ul>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                </ul>
+            </div>
+            <div class="comment-card">
+                <img src="">
+                <h4>Bob Esponja</h4>
+                <h3 class="comment-title">AAAAAAAAAAAAAAAA</h3>
+                <p class="comment-text">MELHOR HAMBURGUER DO MUNDOOOOOOOOOOOOOO!!!!!! ESTOU PRONTO!! ESTOU PRONTO!!</p>
+                <ul>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                </ul>
+            </div>
+            <div class="comment-card">
+                <img src="">
+                <h4>Patrick Estrela</h4>
+                <h3 class="comment-title">Oi</h3>
+                <p class="comment-text">Aí é do Balde de Lixo? Vou querer 2 hamburguers</p>
+                <ul>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="rate-us" class="container">
+            <h2>Avalie-nos</h2>
+            <div>
+                <label for="title">Título:</label>
+                <input type="text" id="title">
+            </div>
+            <div>
+                <label for="comment">Comentário:</label>
+                <textarea id="comment" cols="30" rows="10"></textarea>
+            </div>
+            <ul>
+                <li><button id="burguer-1" onclick="rate(1)"><img src="assets/hamburguer-siri-bnw.png"></button></li>
+                <li><button id="burguer-2" onclick="rate(2)"><img src="assets/hamburguer-siri-bnw.png"></button></li>
+                <li><button id="burguer-3" onclick="rate(3)"><img src="assets/hamburguer-siri-bnw.png"></button></li>
+                <li><button id="burguer-4" onclick="rate(4)"><img src="assets/hamburguer-siri-bnw.png"></button></li>
+                <li><button id="burguer-5" onclick="rate(5)"><img src="assets/hamburguer-siri-bnw.png"></button></li>
+            </ul>
+            <button id="send">Enviar</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
