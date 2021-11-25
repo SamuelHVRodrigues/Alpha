@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Aldrich";
+    src: url(Aldrich-Regular.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f4f4f2;
+    color: #495464;
+    font-family: "Aldrich";
+    font-size: 20px;
+}
+.container {
+    background-color: #e8e8e8;
+    width: 330px;
+    padding: 20px;
+    border-radius: 10px;
+    border-bottom: 2px solid #495464;
+    margin: 20px auto;
+}
+#inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+input {
+    font-family: "Aldrich";
+    font-size: 20px;
+    width: 70px;
+    text-align: center;
+    color: #495464;
+}
+span {
+    text-align: center;
+    width: 15px;
+}
+#result {
+    width: 60px;
+}
+#keyboard {
+    width: 290px;
+}
+button {
+    color: #495464;
+    font-family: "Aldrich";
+    font-size: 20px;
+    width: 130px;
+    height: 40px;
+    margin: 5px;
+}
+#limpar {
+    width: 280px;
+}
