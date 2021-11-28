@@ -1,0 +1,163 @@
+@font-face {
+    font-family: "Krusty-Krab";
+    src: url(Krabby-Patty.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Krusty-Krab";
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #fff;
+    background: url(assets/siri-cascudo-background.jpg) fixed no-repeat;
+    background-size: cover;
+}
+header {
+    height: 10vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1174b8ee;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+header img {
+    height: 12vh;
+}
+nav a{
+    padding: .3vw;
+    color: #fff;
+    text-decoration: none;
+}
+main {
+    margin: 0 auto;
+    width: 70vw;
+}
+.container {
+    background-color: #1174b8ee;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px 0 0;
+    align-items: center;
+    border-bottom: 2px solid #495464;
+    border-radius: 10px;
+}
+#home img{
+    width: 100%;
+}
+#menu img, #promotions img {
+    width: 10vw;
+}
+.menu-itens {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.comment-card {
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: 1px solid #495464;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.profile-picture {
+    width: 30px;
+    margin-right: 10px;
+    border: 1px solid #96191d;
+}
+.rate-us div {
+    width: 100%;
+}
+input {
+    width: 300px;
+}
+textarea {
+    width: 300px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+button {
+    border: 0;
+    background-color: transparent;
+}
+#send {
+    font-family: "Krusty-Krab";
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+    background-color: #96191d;
+    border-radius: 5px;
+    color: #fff;
+}
+ul li img{
+    width: 35px;
+}
+label {
+    display: block;
+}
+
+#do-it-yourself form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-form {
+    width: 70vw;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-burguer {
+    display: flex;
+    flex-direction: column;
+}
+.item-type {
+    font-size: 20px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.item {
+    display: flex;
+    margin: 5px 0;
+}
+
+#do-it-yourself input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+#do-order {
+    font-family: "Krusty-Krab";
+    font-size: 20px;
+    padding: 10px 30px;
+    border: 1px solid #f4f4f2;
+    background-color: #96191d;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#rate-us input[type="radio"] {
+    display: none;
+}

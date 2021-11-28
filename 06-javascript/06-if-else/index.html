@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Siri Cascudo</title>
+</head>
+<body>
+    <header>
+        <img src="assets/krusty-krab.png">
+        <nav>
+            <a href="">Home</a>
+            <a href="">Cardapio</a>
+            <a href="">Promocao</a>
+            <a href="">Comentarios</a>
+            <a href="">Avalie-nos</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <h1>O Siri Cascudo</h1>
+            <img src="assets/the-krusty-krab.png">
+        </section>
+        <section id="menu" class="container">
+            <h2>Cardapio</h2>
+            <div class="menu-itens">
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty</span>
+                    <span>R$ 20,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Duplo</span>
+                    <span>R$ 40,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Triplo</span>
+                    <span>R$ 60,00</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Quadruplo</span>
+                    <span>R$ 80,00</span>
+                </div>
+            </div>
+        </section>
+        <section id="promotions" class="container">
+            <h2>Promocoes</h2>
+            <div class="menu-itens">
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty</span>
+                    <span>R$ 19,99</span>
+                </div>
+                <div class="menu-item">
+                    <img src="assets/hamburguer-siri.png">
+                    <span>Krabby Patty Quadruplo</span>
+                    <span>R$ 79,99</span>
+                </div>
+            </div>
+        </section>
+        <section id="do-it-yourself" class="container">
+            <h2>Monte seu hamburguer</h2>
+            <form action="">
+                <div id="container-form">
+                    <div class="my-burguer">
+                        <label class="item-type" for="">Pao</label>
+                        <div class="item">
+                            <input id="pao-australiano" name="bread" type="radio" value="Pão Australiano">
+                            <label for="pao-australiano">Pao Australiano</label>
+                        </div>
+                        <div class="item">
+                            <input id="pao-de-brioche" name="bread" type="radio" value="Pão de Brioche">
+                            <label for="pao-de-brioche">Pao de Brioche</label>
+                        </div>
+                        <div class="item">
+                            <input id="pao-americano" name="bread" type="radio" value="Pão Americano">
+                            <label for="pao-americano">Pao Americano</label>
+                        </div>
+                    </div>
+                    
+                    <div class="my-burguer">
+                        <label class="item-type" for="">Hamburguer</label>
+                        <div class="item">
+                            <input id="siri" name="burguer" type="radio" value="Hamburguer de Siri">
+                            <label for="siri">Hamburguer de Siri R$ +0,00</label>
+                        </div>
+                        <div class="item">
+                            <input id="siri-duplo" name="burguer" type="radio" value="Hamburguer de Siri Duplo">
+                            <label for="siri-duplo">Hamburguer de Siri Duplo R$ +7,00</label>
+                        </div>
+                        <div class="item">
+                            <input id="siri-triplo" name="burguer" type="radio" value="Hamburguer de Siri Triplo">
+                            <label for="siri-triplo">Hamburguer de Siri Triplo R$ +13,00</label>
+                        </div>
+                    </div>
+                    
+                    <div class="my-burguer">
+                        <label class="item-type" for="">Queijo</label>
+                        <div class="item">
+                            <input id="mussarela" name="cheese" type="radio" value="Mussarela">
+                            <label for="mussarela">Mussarela R$ +2,00</label>
+                        </div>
+                        <div class="item">
+                            <input id="cheddar" name="cheese" type="radio" value="Cheddar">
+                            <label for="cheddar">Cheddar R$ +2,50</label>
+                        </div>
+                        <div class="item">
+                            <input id="coalho" name="cheese" type="radio" value="Coalho">
+                            <label for="coalho">Coalho R$ +3,00</label>
+                        </div>
+                    </div>
+                    
+                    <div class="my-burguer">
+                        <label class="item-type" for="">Molho</label>
+                        <div class="item">
+                            <input id="barbecue" name="sauce" type="radio" value="Barbecue">
+                            <label for="barbecue">Barbecue R$ +1,00</label>
+                        </div>
+                        <div class="item">
+                            <input id="tasty" name="sauce" type="radio" value="Tasty">
+                            <label for="tasty">Tasty R$ +1,25</label>
+                        </div>
+                        <div class="item">
+                            <input id="americano" name="sauce" type="radio" value="Americano">
+                            <label for="americano">Americano R$ +1,25</label>
+                        </div>
+                    </div>
+                    
+                    <div class="my-burguer">
+                        <label class="item-type" for="">Salada</label>
+                        <div class="item">
+                            <input id="tomate" name="salad" type="radio" value="Tomate">
+                            <label for="tomate">Tomate R$ +0,25</label>
+                        </div>
+                        <div class="item">
+                            <input id="alface" name="salad" type="radio" value="Alface">
+                            <label for="alface">Alface R$ +0,25</label>
+                        </div>
+                        <div class="item">
+                            <input id="picles" name="salad" type="radio" value="Picles">
+                            <label for="picles">Picles R$ +0,50</label>
+                        </div>
+                        <div class="item">
+                            <input id="sem-salada" name="salad" type="radio" value="Sem salada">
+                            <label for="sem-salada">Sem salada</label>
+                        </div>
+                    </div>
+                </div>
+                <button id="do-order" onclick="price()">Fazer pedido</button>
+            </form>
+            <div>
+                <span id="bread-choice"></span>
+                <span id="burguer-choice"></span>
+                <span id="cheese-choice"></span>
+                <span id="sauce-choice"></span>
+                <span id="salad-choice"></span>
+                <span id="final-price"></span>
+            </div>
+        </section>
+        <section id="comments" class="container">
+            <h2>Comentarios</h2>
+            <div class="comment-card">
+                <div class="user-info">
+                    <img class="profile-picture" src="assets/plankton.png">
+                    <h4>Plankton</h4>
+                </div>
+                <h3 class="comment-title">Adorei</h3>
+                <p class="comment-text">Gostei muito, qual eh o ingrediente secreto?</p>
+                <ul>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                </ul>
+            </div>
+            <div class="comment-card">
+                <div class="user-info">
+                    <img class="profile-picture" src="assets/bob-esponja.jpg">
+                    <h4>Bob Esponja</h4>
+                </div>
+                <h3 class="comment-title">AAAAAAAAAAAAAAAA</h3>
+                <p class="comment-text">MELHOR HAMBURGUER DO MUNDOOOOOOOOOOOOOO!!!!!!</p>
+                <ul>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                </ul>
+            </div>
+            <div class="comment-card">
+                <div class="user-info">
+                    <img class="profile-picture" src="assets/patrick.png">
+                    <h4>Patrick Estrela</h4>
+                </div>
+                <h3 class="comment-title">Aloh</h3>
+                <p class="comment-text">Ai eh do Balde de Lixo? Vou querer 2 hamburgueres</p>
+                <ul>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                    <li><img src="assets/hamburguer-siri-bnw.png"></li>
+                </ul>
+            </div>
+        </section>
+        <section id="rate-us" class="container">
+            <form action="">
+                <h2>Avalie-nos</h2>
+                <div>
+                    <label for="picture">Foto de perfil:</label>
+                    <input type="file" accept="image/*" id="picture">
+                </div>
+                <div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name">
+                </div>
+                <div>
+                    <label for="title">Titulo:</label>
+                    <input type="text" id="title">
+                </div>
+                <div>
+                    <label for="comment">Comentario:</label>
+                    <textarea id="comment" cols="30" rows="10"></textarea>
+                </div>
+                <ul>
+                    <li>
+                        <label for="rate-1" onclick="rate(1)"><img id="burguer-1" src="assets/hamburguer-siri-bnw.png"></label>
+                        <input id="rate-1" name="rate" value="1" type="radio">
+                    </li>
+                    <li>
+                        <label for="rate-2" onclick="rate(2)"><img id="burguer-2" src="assets/hamburguer-siri-bnw.png"></label>
+                        <input id="rate-2" name="rate" value="2" type="radio">
+                    </li>
+                    <li>
+                        <label for="rate-3" onclick="rate(3)"><img id="burguer-3" src="assets/hamburguer-siri-bnw.png"></label>
+                        <input id="rate-3" name="rate" value="3" type="radio">
+                    </li>
+                    <li>
+                        <label for="rate-4" onclick="rate(4)"><img id="burguer-4" src="assets/hamburguer-siri-bnw.png"></label>
+                        <input id="rate-4" name="rate" value="4" type="radio">
+                    </li>
+                    <li>
+                        <label for="rate-5" onclick="rate(5)"><img id="burguer-5" src="assets/hamburguer-siri-bnw.png"></label>
+                        <input id="rate-5" name="rate" value="5" type="radio">
+                    </li>
+                </ul>
+                <input type="button" value="Enviar" id="send" onclick="addComment()"></input>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
