@@ -85,7 +85,6 @@ function rate(id) {
     }
 }
 
-
 function addComment() {
     let comments = document.getElementById("comments");
 
