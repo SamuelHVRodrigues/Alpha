@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Gloria-Hallelujah";
+    src: url(GloriaHallelujah-Regular.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+}
+body {
+    width: 940px;
+    height: 96vh;
+    margin: 0 auto;
+}
+#blackboard-background {
+    background-color: #05231b;
+}
+#blackboard {
+    background-image: url("assets/bart-simpson.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 100px;
+
+    font-family: "Gloria-Hallelujah";
+    border: 15px solid #8b491e;
+    color: #fff;
+    margin: 20px 0;
+    padding: 20px 34px;
+    width: 940px;
+    height: 700px;
+}
+#blackboard span {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#question input {
+    width: 250px;
+}
+#question button {
+    font-size: 25px;
+    padding: 4px 27px;
+}
+
+.writing-animation {
+    animation: writing 2500ms normal;
+}
+
+@keyframes writing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 842px;
+    }
+}
