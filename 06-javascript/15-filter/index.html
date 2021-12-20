@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Juros</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <div class="input-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name">
+            </div>
+            <div class="input-form">
+                <label for="due-date">Data de Vencimento:</label>
+                <input type="date" id="due-date">
+            </div>
+            <div class="input-form">
+                <label for="purchase-price">Valor:</label>
+                <input type="number" id="purchase-price">
+            </div>
+            <input onclick="add()" type="reset" value="Adicionar">
+        </form>
+        <section id="notes"></section>
+        <button onclick="calculateInterest()">Calcular Juros</button>
+        <section id="interest"></section>
+        <button onclick="groupByCustomer()">Agrupar por Cliente</button>
+        <button onclick="groupByDueDate()">Agrupar por Data de Vencimento</button>
+        <form action="">
+            <div>
+                <label for="initial-date"></label>
+                <input type="date" name="initial-date" id="initial-date">
+                <label for="final-date"></label>
+                <input type="date" name="final-date" id="final-date">
+            </div>
+            <div>
+                <label for="minimum-value"></label>
+                <input type="number" placeholder="Valor mínimo" name="minimum-value" id="minimum-value">
+                <label for="maximum-value"></label>
+                <input type="number" placeholder="Valor máximo" name="maximum-value" id="maximum-value">
+            </div>
+            <input type="button" onclick="filterDefaulters()" value="Filtrar">
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
