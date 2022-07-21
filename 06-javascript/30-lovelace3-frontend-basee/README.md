@@ -1,1 +1,0 @@
-# lovelace3-frontend-base
